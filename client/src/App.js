@@ -7,21 +7,20 @@ import Disclaimer from './components/Disclaimer';
 import Context from './components/Context';
 import Selection from './components/Selection';
 import Data from './components/Data';
+import Navbar from './components/Navbar';
 
 class App extends Component {
   render() {
     return (
       <Router>
         <div className="App">
-          <nav>
-            <h1>Performance Review</h1>
-          </nav>
+          <Navbar/>
           <Switch>
-            <Route path="/" exact component={Home} />
+            <Route path="/home" exact component={Home} />
             <Route path="/disclaimer" component={Disclaimer} />
             <Route path="/selection" component={Selection} />
-            <Route path="/:id" component={Data} />
-            <Route path="/Context" component={Context} />
+            <Route path="/context" component={Context} />
+            <Route path="/data" component={Data} />
           </Switch>
         </div>
       </Router>

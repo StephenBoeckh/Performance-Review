@@ -21,6 +21,16 @@ app.use(bodyParser.urlencoded({ extended: false }))
  
 app.use(bodyParser.json());
 
+app.get('/fundlists', (req, res) => {
+  db.fundlists.findAll()
+    .then(fundlists => {
+      res.json(fundlists)
+    })
+    .catch(err => {
+      res.status(500).json(err);
+    });
+})
+
 app.listen(PORT, ()=> {
     console.log(`server listening on ${PORT}`);
   });

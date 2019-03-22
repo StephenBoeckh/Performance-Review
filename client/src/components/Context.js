@@ -1,9 +1,12 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 export default class Context extends React.Component {
     render(){
         return (
-            <h1>Context</h1>
+            <div>
+                <h1>Context</h1>
+            </div>
         )
     }
 }
