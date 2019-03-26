@@ -1,26 +1,34 @@
 import React from 'react';
 import Axios from 'axios';
-import Funditem from './fundItem';
+import Categoryaverage from './categoryaverage';
 
 export default class Data extends React.Component {
     state = {
-        fund: []
+        fund: [],
+        average: []
     }
 
     componentDidMount(){
         const getFundURL = `http://localhost:8080/individual/${this.props.id}`;
         Axios.get(getFundURL)
           .then(result => {
-              console.log(result)
-            this.setState({
-              fund: result.data
+              this.setState({
+                  fund:result.data
+              })
+            return Axios.get(`http://localhost:8080/fundlists/company/${result.data.category}`)
+            .then(result => {
+                console.log(result)
+                this.setState({
+                    average: result.data
+                })
             })
-        })
+            
+            })
     }
     
     render(){
         const fund = this.state.fund
-        console.log(fund)
+        const average = this.state.average
         return (
             <div>
                 <table>
@@ -46,6 +54,16 @@ export default class Data extends React.Component {
                             <td>{fund.yearc}</td>
                             <td>{fund.yeard}</td>
                             <td>{fund.yeare}</td>
+                        </tr>
+                        <tr>
+                            <td>{average.name}</td>
+                            <td>{average.company}</td>
+                            <td>{average.category}</td>
+                            <td>{average.yeara}</td>
+                            <td>{average.yearb}</td>
+                            <td>{average.yearc}</td>
+                            <td>{average.yeard}</td>
+                            <td>{average.yeare}</td>
                         </tr>
                     </tbody>
                     
