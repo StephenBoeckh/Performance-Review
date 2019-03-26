@@ -17,12 +17,12 @@ export default class Navbar extends React.Component{
                         </Link>
                     </div>
                     <div>
-                        <Link to="/selection">
+                        <Link to="/selection/company">
                             <h3>Selection</h3>
                         </Link>
                     </div>
                     <div>
-                        <Link to="/data">
+                        <Link to="/fundlists/individual/:id">
                             <h3>Data</h3>
                         </Link>
                     </div>

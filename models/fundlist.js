@@ -5,11 +5,11 @@ module.exports = (sequelize, DataTypes) => {
     company: DataTypes.STRING,
     category: DataTypes.STRING,
     risk: DataTypes.STRING,
-    2018: DataTypes.FLOAT,
-    2017: DataTypes.FLOAT,
-    2016: DataTypes.FLOAT,
-    2015: DataTypes.FLOAT,
-    2014: DataTypes.FLOAT
+    yeara: DataTypes.FLOAT,
+    yearb: DataTypes.FLOAT,
+    yearc: DataTypes.FLOAT,
+    yeard: DataTypes.FLOAT,
+    yeare: DataTypes.FLOAT
   }, {
     underscored: true,
   });

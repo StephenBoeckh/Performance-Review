@@ -20,7 +20,7 @@ export default class Disclaimer extends React.Component{
                     <li>Anything can happen in a given year, therefore do not read too much into a single year's calendar performance</li>
                     <li>Do not make impulsive decision based off these results. This tool is designed to aid you in having a more educating conversation about fund selection</li>
                 </ul>
-                <Link to="/selection">
+                <Link to="/selection/company">
                     <button>Select Your Fund</button>
                 </Link>
             </div>

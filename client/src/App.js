@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Home from './components/Home';
 import Disclaimer from './components/Disclaimer';
 import Context from './components/Context';
-import Selection from './components/Selection';
+import Selectcompany from './components/Selectcompany';
+import Selectfund from './components/Selectfund';
 import Data from './components/Data';
 import Navbar from './components/Navbar';
+import Individualfund from './components/individualfund'
 
 class App extends Component {
   render() {
@@ -18,9 +19,10 @@ class App extends Component {
           <Switch>
             <Route path="/home" exact component={Home} />
             <Route path="/disclaimer" component={Disclaimer} />
-            <Route path="/selection" component={Selection} />
+            <Route path="/selection/company" component={Selectcompany} />
+            <Route path="/fundlists/:company" component={Selectfund}/>
+            <Route path="/individual/:id" component={Individualfund} />
             <Route path="/context" component={Context} />
-            <Route path="/data" component={Data} />
           </Switch>
         </div>
       </Router>

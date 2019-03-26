@@ -20,20 +20,30 @@ module.exports = {
       risk: {
         type: Sequelize.STRING
       },
-      2018: {
+      yeara: {
         type: Sequelize.FLOAT
       },
-      2017: {
+      yearb: {
         type: Sequelize.FLOAT
       },
-      2016: {
+      yearc: {
         type: Sequelize.FLOAT
       },
-      2015: {
+      yeard: {
         type: Sequelize.FLOAT
       },
-      2014: {
+      yeare: {
         type: Sequelize.FLOAT
+      },
+      created_at: {
+        allowNull: false,
+        type: Sequelize.DATE,
+        defaultValue: Sequelize.fn('NOW')
+      },
+      updated_at: {
+        allowNull: false,
+        type: Sequelize.DATE,
+        defaultValue: Sequelize.fn('NOW')
       }
     });
   },
