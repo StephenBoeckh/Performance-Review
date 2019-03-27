@@ -4,21 +4,21 @@ import {Link} from 'react-router-dom';
 export default class Disclaimer extends React.Component{
     render(){
         return (
-            <div>
-                <h1>How It Works</h1>
-                <p>Performance Review is allows you to objectively evaluate the performance of your mutual fund by eliminating all the uneccessary noise.</p>
+            <div className='disclaimer__div'>
+                <h2>How It Works</h2>
+                <p>Performance Review allows you to objectively evaluate mutual fund performance by focusing on the most relevant comparative data.</p>
                 <h3>Benefits:</h3>
                 <ul>
-                    <li>Perfect for the experienced and novice investors alike</li>
-                    <li>No need for knowledge of overall market performance</li>
-                    <li>Measure fund performance against the average performance of comparable funds</li>
-                    <li>Comparison data is available for the past 5 calendar years to help identify patterns of above/below average performance</li>
+                    <li>Helps identify patterns of above/below-average performance</li>
+                    <li>Suitable for both experienced and novice investors</li>
+                    <li>Measure your fund's performance against the average performance of similar funds from a comparable universe</li>
+                    <li>Measures performance over a meaningful time period, comprising the past 5 calendar years</li>
                 </ul>
-                <h3>Things to Note</h3>
+                <h3>Please Note:</h3>
                 <ul>
-                    <li>Past performance is not a perfect indicator of future performance</li>
-                    <li>Anything can happen in a given year, therefore do not read too much into a single year's calendar performance</li>
-                    <li>Do not make impulsive decision based off these results. This tool is designed to aid you in having a more educating conversation about fund selection</li>
+                    <li>Past performance is not necessarily indicative of future performance</li>
+                    <li>Professional investment managers use different approaches; their results will vary under different market conditions. For this reason, be wary of placing too much importance on variations in performance in any one calendar year. Investing is a marathon, not a sprint - that's why we compare results over a five-year period</li>
+                    <li>Don't make impulsive decisions based solely on these results. This tool evaluates performance and provides the basis for meaningful discussion you can have with your financial advisor about portfolio construction</li>
                 </ul>
                 <Link to="/selection/company">
                     <button>Select Your Fund</button>

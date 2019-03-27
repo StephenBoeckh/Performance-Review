@@ -21,7 +21,7 @@ module.exports = {
         category: "Global Equity",
         risk: "Medium",
         yeara: -7.87,
-        yearb: 9.1,
+        yearb: 9.10,
         yearc: -1.08,
         yeard: 14.02,
         yeare: 13.36 
@@ -53,7 +53,7 @@ module.exports = {
         company: "CI Investments",
         category: "Global Equity",
         risk: "Medium",
-        yeara: -7.4,
+        yeara: -7.40,
         yearb: 15.01,
         yearc: 2.89,
         yeard: 11.26,
@@ -65,7 +65,7 @@ module.exports = {
         category: "Canadian Equity",
         risk: "Medium",
         yeara: -12.92,
-        yearb: -0.4,
+        yearb: -0.40,
         yearc: 21.94,
         yeard: -5.76,
         yeare: 14.65
@@ -79,7 +79,7 @@ module.exports = {
         yearb: 13.24,
         yearc: 3.04,
         yeard: 18.02,
-        yeare: 18.6
+        yeare: 18.60
       },
       {
         name: 'MFS Global Growth Fund',
@@ -88,8 +88,8 @@ module.exports = {
         risk: "Medium",
         yeara: 2.22,
         yearb: 21.13,
-        yearc: -0.2,
-        yeard: 15.7,
+        yearc: -0.20,
+        yeard: 15.70,
         yeare: 11.57
       },
       {
@@ -97,8 +97,8 @@ module.exports = {
         company: "Sun Life Global Investments",
         category: "Canadian Equity",
         risk: "Medium",
-        yeara: -8.4,
-        yearb: 6.1,
+        yeara: -8.40,
+        yearb: 6.10,
         yearc: 13.17,
         yeard: -6.18,
         yeare: 11.57
@@ -156,7 +156,7 @@ module.exports = {
         yearb: 18.07,
         yearc: 1.77,
         yeard: 22.33,
-        yeare: 10.4
+        yeare: 10.40
       },
       {
         name: 'Canadian Growth Fund',
@@ -165,8 +165,8 @@ module.exports = {
         risk: "Medium",
         yeara: -9.24,
         yearb: 15.38,
-        yearc: 13.6,
-        yeard: 10.8,
+        yearc: 13.60,
+        yeard: 10.80,
         yeare: 15.06
       },
       {
@@ -174,9 +174,9 @@ module.exports = {
         company: "CIBC",
         category: "US Equity",
         risk: "Medium",
-        yeara: 4.2,
-        yearb: 15.8,
-        yearc: -0.9,
+        yeara: 4.20,
+        yearb: 15.80,
+        yearc: -0.90,
         yeard: 25.67,
         yeare: 19.15
       },
@@ -219,7 +219,7 @@ module.exports = {
         category: "Global Equity",
         risk: "Medium",
         yeara: -13.69,
-        yearb: 21.0,
+        yearb: 21.00,
         yearc: -1.84,
         yeard: 8.52,
         yeare: 4.42
@@ -229,8 +229,8 @@ module.exports = {
         company: "Mackenzie",
         category: "Canadian Equity",
         risk: "Medium",
-        yeara: -2.6,
-        yearb: 14.2,
+        yeara: -2.60,
+        yearb: 14.20,
         yearc: 9.15,
         yeard: 13.78,
         yeare: 22.43
@@ -243,7 +243,7 @@ module.exports = {
         yeara: -0.44,
         yearb: 13.27,
         yearc: 5.85,
-        yeard: 13.6,
+        yeard: 13.60,
         yeare: 18.27
       },
       {
@@ -266,7 +266,7 @@ module.exports = {
         yearb: 8.11,
         yearc: 17.39,
         yeard: -6.06,
-        yeare: 9.4
+        yeare: 9.40
       }
     ], {});
   },

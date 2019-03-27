@@ -6,7 +6,6 @@ import Disclaimer from './components/Disclaimer';
 import Context from './components/Context';
 import Selectcompany from './components/Selectcompany';
 import Selectfund from './components/Selectfund';
-import Data from './components/Data';
 import Navbar from './components/Navbar';
 import Individualfund from './components/individualfund'
 
@@ -17,6 +16,7 @@ class App extends Component {
         <div className="App">
           <Navbar/>
           <Switch>
+            <Route path="/" exact component={Home} />
             <Route path="/home" exact component={Home} />
             <Route path="/disclaimer" component={Disclaimer} />
             <Route path="/selection/company" component={Selectcompany} />
