@@ -9,17 +9,17 @@ export default class Navbar extends React.Component{
                 <div className='navbar__links'>
                     <div>
                         <Link to="/Home">
-                            <h4>Home</h4>
+                            <h4 className='nav__item'>Home</h4>
                         </Link>
                     </div>
                     <div>
                         <Link to="/disclaimer">
-                            <h4>About</h4>
+                            <h4 className='nav__item'>About</h4>
                         </Link>
                     </div>
                     <div>
                         <Link to="/selection/company">
-                            <h4>Select Funds</h4>
+                            <h4 className='nav__item'>Select Funds</h4>
                         </Link>
                     </div>
                 </div>

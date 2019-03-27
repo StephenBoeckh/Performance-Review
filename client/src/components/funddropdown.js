@@ -35,7 +35,6 @@ export default class Funddropdown extends Component {
     const getFunds = `http://localhost:8080/fundlists/${find}`
     Axios.get(getFunds)
         .then(result => {
-            console.log(result)
         this.setState({
             companyfunds: result.data
             })

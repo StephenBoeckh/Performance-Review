@@ -16,7 +16,6 @@ export default class Data extends React.Component {
               })
             return Axios.get(`http://localhost:8080/fundlists/company/${result.data.category}`)
             .then(result => {
-                console.log(result)
                 this.setState({
                     average: result.data
                 })
@@ -28,9 +27,8 @@ export default class Data extends React.Component {
     render(){
         const fund = this.state.fund
         const average = this.state.average
-        console.log(average)
         return (
-            <div>
+            <div className='data__div'>
                 <table>
                     <thead>
                         <tr>
@@ -52,7 +50,7 @@ export default class Data extends React.Component {
                             <td>{fund.yeare}</td>
                         </tr>
                         <tr>
-                            <td>{average.name}</td>
+                            <td>Average</td>
                             <td>{average.yeara}</td>
                             <td>{average.yearb}</td>
                             <td>{average.yearc}</td>

@@ -40,10 +40,19 @@ $color3: #2F4858;
 
 body{
   background-color: $color3;
+  text-decoration: none;
 }
 
 .navbar {
   background-color:$color1;
+}
+.hero{
+  width: 100vw;
+  height: 180px;
+}
+.hero__image{
+  width: 100vw;
+  height: 180px;
 }
 
 .navbar__links {
@@ -55,6 +64,9 @@ body{
 
 h1{
   color: $color2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: italic;
 }
 
 h4, h3, th {
@@ -63,10 +75,17 @@ h4, h3, th {
   padding:0px 20px;
   background-color: $color3;
 }
+h4{
+  text-decoration: none;
+}
+.nav__item{
+  text-decoration: none;
+}
 th{
   white-space: nowrap;
   padding: 0px;
   margin-bottom: 50px;
+  font-style: italic;
 }
 tr{
   margin: 25px 0px;
@@ -74,11 +93,12 @@ tr{
 td{
   color: $color2;
   margin: 25px 0px;
+  font-weight: 500;
 }
 h3{
   text-align: left;
 }
-.home__div, .disclaimer__div {
+.home__div, .disclaimer__div, .company__div, .fund__div, .data__div {
   background-color: $color1;
   padding-bottom:30px;
 }
@@ -96,7 +116,7 @@ button{
   background-color: $color2;
   color: $color1;
   border-radius: 10px;
-  width: 50%;
+  width: 60%;
   margin-top: 20px;
 }
 
@@ -108,10 +128,95 @@ li{
   color: $color2;
   padding: 5px 5% 5px 0px;
   align-content: center;
+  width: 100%;
 }
 
 ul{
   list-style: none;
   align-content: left;
-  padding-inline-start: 5%;
+  padding-inline-start: 0%;
+}
+@media(min-width: 760px){
+  .navbar{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    background-color: $color3;
+  }
+  .navbar__links{
+    background-color: $color3
+  }
+  .hero__image{
+    height: 360px;
+  }
+  .hero{
+    height: 360px;
+  }
+  h1{
+    padding-left: 5%;
+  }
+  .home__div, .disclaimer__div, .company__div, .fund__div{
+    width: 80%;
+    align-content: center;
+    margin: 0 5% 0 10%;
+    justify-items: center;
+    padding: 3% 0 3% 0%;
+  }
+  .home__div, .fund__div{
+    height: 300px;
+  }
+  .disclaimer__div{
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+  }
+  .data__div{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 5%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  table{
+    border: solid 3px $color2;
+  }
+  th, td{
+    padding: 20px;
+    border: solid 3px $color2;
+  }
+  h3{
+    width: 100%;
+    padding: 0px;
+    align-content: left;
+  }
+  .data__div{
+    width: 90%;
+    margin-left: 0%;
+    display: flex;
+    align-content: center;
+  }
+}
+
+@media(min-width: 1440px){
+  th, td{
+    padding: 50px;
+  }
+  .home__div{
+    padding: 3% 10%;
+    width: 60%;
+  }
+  .hero__image{
+    width: 80vw;
+  }
+  button{
+    height: 50px;
+  }
+  .data__div{
+    background-color: $color3;
+  }
+  .context{
+    width: 60%;
+    align-content: center;
+    padding: 0 20%;
+  }
 }

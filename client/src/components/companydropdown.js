@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
 import Companylist from './companylist';
-import {Link} from 'react-router-dom';
 
 export default class Companydropdown extends Component {
   constructor() {
